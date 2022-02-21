@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 from urllib.request import urlopen
-import jsonom
+import json
 from bs4 import BeautifulSoup
 from requests_html import HTMLSession
 
