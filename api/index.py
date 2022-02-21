@@ -11,12 +11,3 @@ def read_base():
     data = json.loads(response.read())
     img_url = data["img"]
     return render_template('img.html', img_url = img_url)
-
-@app.route('/test')
-def test():
-    return 'Test'
-
-@app.route('/result')
-def result():
-   dict = {'phy':50,'che':60,'maths':70}
-   return render_template('index.html', result = dict)
