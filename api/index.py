@@ -9,5 +9,5 @@ BASE_URL = "https://xkcd-api-ridvanaltun.vercel.app/api/comics/random"
 def read_base():
     response = urlopen(BASE_URL)
     data = json.loads(response.read())
-    img_url = data["img"]
-    return render_template('img.html', img_url = img_url)
+    xkcd_url = data["img"]
+    return render_template('img.html', img_url = xkcd_url)
