@@ -24,4 +24,4 @@ def image_url():
     soup = BeautifulSoup(content, "html.parser")
     images = soup.find_all("img")
     src = images.get("src")
-    return src
+    return send_file(src, mimetype = 'image/jpg')
