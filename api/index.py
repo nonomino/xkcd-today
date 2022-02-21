@@ -10,7 +10,7 @@ def read_base():
     response = urlopen(BASE_URL)
     data = json.loads(response.read())
     img_url = data["img"]
-    return render_template('img.html', img_url)
+    return render_template('img.html', img_url = img_url)
 
 @app.route('/test')
 def test():
