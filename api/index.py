@@ -1,4 +1,4 @@
-from flask import Flask, render_template, send_file 
+from flask import Flask, render_template, send_filew redirect
 from urllib.request import urlopen
 import json
 from bs4 import BeautifulSoup
