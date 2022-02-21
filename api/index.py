@@ -18,4 +18,5 @@ def image_url():
     response = urlopen(BASE_URL)
     data = json.loads(response.read())
     xkcd_url = data["img"]
-    return send_file(xkcd_url, mimetype = 'image/png')
+    return xkcd_url
+    #return send_file(xkcd_url, mimetype = 'image/png')
