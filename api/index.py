@@ -17,9 +17,10 @@ def read_base():
 def image_url():
     url = './templates/img.html'
     with HTMLSession() as session:
-    response = session.get(url)
-    response.html.render()
-    content = response.html.html
+        response = session.get(url)
+        response.html.render()
+        content = response.html.html
+
     soup = BeautifulSoup(content, "html.parser")
     images = soup.find_all("img")
     src = images.get("src")
