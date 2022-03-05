@@ -1,2 +1,3 @@
 # xkcd-today
-Feeds today's XKCD Comic
+Feeds a random XKCD Comic 😺
+
